@@ -5,13 +5,15 @@
 > 下载脚本
 
 ```
-wget https://raw.githubusercontent.com/shanzhiliu/script/blob/master/%E5%AE%89%E8%A3%85java/install_java_local.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/java/install_java_net.sh
+
+chmod 777 install_java_net.sh
 ```
 
 > 参数1 ： 输入java要安装的路径
 
 ```
-./install_java_net.sh  /opt/soft/jdk_1.8 
+./install_java_net.sh  /opt/soft/jdk_shan 
 ```
 
 
