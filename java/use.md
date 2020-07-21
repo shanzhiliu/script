@@ -25,7 +25,7 @@ chmod 777 install_java_net.sh
 > 参数2 ： 输入java的jdk压缩包位置
 
 ```
-./install_java_local.sh  /opt/soft/jdk_1.8 
+./install_java.sh  /opt/soft/jdk_test /root/shan/jdk1.8.tar
 ```
 
 

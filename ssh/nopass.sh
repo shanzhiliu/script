@@ -17,6 +17,9 @@ EOF
 
 function sshkeypush() {
 
+echo "--------------------------------"
+echo $2
+
 /usr/bin/expect << EOF
 set timeout 30
 spawn ssh-copy-id -i $1
