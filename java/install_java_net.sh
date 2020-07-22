@@ -6,7 +6,7 @@ wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-
 cudir=`pwd`
 
 #参数1 java 要安装的路径
-java_install_path=/opt/soft/test/jdk1.8
+java_install_path=/opt/soft/java/jdk1.8
 #参数2 java 压缩包的位置
 java_jar_path="$cudir/jdk-8u131-linux-x64.tar.gz"
 
@@ -26,8 +26,13 @@ if [ -n "$1" ]; then
     java_install_file_name=${java_install_path##*/}
     echo $java_install_file_name
 else
-    echo "请输入你想要安装的路径-路径-如 /opt/soft/test/jdk1.8"
-    exit
+    echo "使用配置文件的默认路径安装"
+      #获取文件名
+    java_install_dir_name=${java_install_path%/*}
+    echo $java_install_dir_name
+    #获取所在路径
+    java_install_file_name=${java_install_path##*/}
+    echo $java_install_file_name
 fi
 
 
