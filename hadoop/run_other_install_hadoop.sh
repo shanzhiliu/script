@@ -25,9 +25,10 @@ function ConfigRunShell(){
     for ((i=1;i<${CONFIG_LENGTH};i++));
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
-        scp install_java_net.sh  ${CONFIG[4]}@${CONFIG[3]}:~
+        scp install_hadoop_net.sh  ${CONFIG[4]}@${CONFIG[3]}:~
         ssh -T -p ${CONFIG[2]} ${CONFIG[4]}@${CONFIG[3]} << EOF 
-        sh install_java_net.sh 
+        sh install_hadoop_net.sh
+        cat /root/.bash_profile > /home/shanshan3/.bash_profile
 EOF
     done
     
