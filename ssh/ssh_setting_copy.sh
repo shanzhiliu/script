@@ -25,10 +25,7 @@ function ConfigRunShell(){
     for ((i=1;i<${CONFIG_LENGTH};i++));
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
-        scp install_java_net.sh  ${CONFIG[4]}@${CONFIG[3]}:~
-        ssh -T -p ${CONFIG[2]} ${CONFIG[4]}@${CONFIG[3]} << EOF 
-        sh install_java_net.sh  /opt/soft/jdk_shan
-EOF
+        scp ssh_setting.sh  ${CONFIG[4]}@${CONFIG[3]}:~
     done
     
      echo -e "连接到其他服务器运行脚本---完成\t"
