@@ -9,8 +9,6 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/java/install_jav
 ```
 
 ```
-wget &&chmod 777 install_java_net.sh
-
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/java/run_other_install_java.sh&&chmod   777   run_other_install_java.sh
 
