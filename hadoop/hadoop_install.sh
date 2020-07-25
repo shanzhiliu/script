@@ -1,15 +1,12 @@
 
-yum -y install wget
-
 wget wget https://archive.apache.org/dist/hadoop/core/hadoop-2.7.3/hadoop-2.7.3.tar.gz
-
 
 cuuser=shanshan3
 
 cudir=`pwd`
 
 #参数1 java 要安装的路径
-hadoop_install_path=/opt/soft/hadoop/hadoop2.7.3
+hadoop_install_path=/opt/soft/hadoop/hadoop-2.7.3
 #参数2 java 压缩包的位置
 hadoop_jar_path="$cudir/hadoop-2.7.3.tar.gz"
 
@@ -73,6 +70,8 @@ echo "export PATH=\$PATH:\$HADOOP_HOME/bin:\$PATH:\$HADOOP_HOME/sbin"  >> ~/.bas
 
 
 source ~/.bash_profile
+
+
 
 echo "hadoop 安装配置完成"
 echo `hadoop version`
