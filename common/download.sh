@@ -21,3 +21,5 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/java/java_instal
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_install_other.sh
 
+chmod 777 *
+
