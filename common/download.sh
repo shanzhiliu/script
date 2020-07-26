@@ -44,3 +44,6 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdat
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/slaves
 
 
+
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hive/hive_install.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hive/hive_install_other.sh

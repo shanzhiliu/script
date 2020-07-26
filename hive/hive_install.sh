@@ -56,8 +56,8 @@ mkdir ./hive && tar -xzvf  $hive_jar_file_name -C ./hive --strip-components 1
 mv hive $hive_install_file_name
 
 
-chown -R $cuuser:$cuuser apache-hive-1.2.2-bin/
-chmod -R 755  apache-hive-1.2.2-bin/	
+chown -R $cuuser:$cuuser $hive_install_path
+chmod -R 755 $hive_install_path	
 
 
 echo "hive 安装配置完成"
