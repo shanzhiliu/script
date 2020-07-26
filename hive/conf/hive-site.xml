@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+<property>
+    <!--这个是用于存放hive元数据的目录位置。 -->
+  <name>hive.metastore.warehouse.dir</name>
+  <value>/user/hive_remote/warehouse</value>
+</property>
+<!-- 控制hive是否连接一个远程metastore服务器还是开启一个本地客户端jvm，默认是true，Hive0.10已经取消了该配置项；-->
+<property>
+  <name>hive.metastore.local</name>
+  <value>true</value>
+</property>
+   <!-- JDBC连接字符串，默认jdbc:derby:;databaseName=metastore_db;create=true；-->
+<property>
+  <name>javax.jdo.option.ConnectionURL</name>
+  <value>jdbc:mysql://45.76.211.49/hive_remote?createDatabaseIfNotExist=true</value>
+</property>
+   <!--JDBC的driver，默认org.apache.derby.jdbc.EmbeddedDriver； -->
+<property>
+  <name>javax.jdo.option.ConnectionDriverName</name>
+  <value>com.mysql.jdbc.Driver</value>
+</property>
+   <!-- username，默认APP；-->
+<property>
+  <name>javax.jdo.option.ConnectionUserName</name>
+  <value>root</value>
+</property>
+   <!--password，默认mine；-->
+<property>
+  <name>javax.jdo.option.ConnectionPassword</name>
+  <value>shan@@aaAA1SS</value>
+</property>
+
+</configuration>

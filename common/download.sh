@@ -46,3 +46,5 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdat
 
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hive/hive_install.sh
+
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/mysql/mysql_install.sh
