@@ -1,8 +1,6 @@
 
 wget wget https://archive.apache.org/dist/hadoop/core/hadoop-2.7.3/hadoop-2.7.3.tar.gz
 
-cuuser=shanshan3
-
 cudir=`pwd`
 
 #参数1 java 要安装的路径
@@ -56,15 +54,11 @@ cd $hadoop_install_dir_name
 mkdir ./hadoop && tar -xzvf  $hadoop_jar_file_name -C ./hadoop --strip-components 1
 mv hadoop $hadoop_install_file_name
 
-chown -R $cuuser:$cuuser  $hadoop_install_path
-
-chmod -R 755 $hadoop_install_path
-chmod -R g+w $hadoop_install_path
-chmod -R o+w $hadoop_install_path
 
 
 
-echo "#jdk8 config" >> ~/.bash_profile
+
+echo "#hadoop config" >> ~/.bash_profile
 echo "export HADOOP_HOME=$hadoop_install_path" >> ~/.bash_profile
 echo "export PATH=\$PATH:\$HADOOP_HOME/bin:\$PATH:\$HADOOP_HOME/sbin"  >> ~/.bash_profile
 

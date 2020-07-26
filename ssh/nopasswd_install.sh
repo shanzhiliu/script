@@ -66,6 +66,8 @@ function ConfigPasswd(){
      echo -e "拷贝本地秘钥到其他服务器---完成\t"
 }
 
+
+
 sshkeygen
 ConfigPasswd
 
