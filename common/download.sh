@@ -41,5 +41,4 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdat
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/yarn-site.xml
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/slaves
 
-chmod 777 *.sh
 
