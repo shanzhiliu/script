@@ -14,13 +14,13 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/host_inst
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/user_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/user_install_other.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/user_nopasswd.sh
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/host.ini
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/user_host.ini
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/nopasswd_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/nopasswd_install_other.sh
-wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/user_nopasswd.sh
 
 
 
