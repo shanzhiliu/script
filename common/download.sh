@@ -1,5 +1,5 @@
 
-wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/install_root_all.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/install_all.sh
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/base_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/base_install_other.sh
