@@ -24,6 +24,8 @@ sh java_install.sh
 #其他机器安装java
 sh java_install_other.sh
 
+source ~/.base_profile
+
 
 
 #创建用户名密码,因为需要识别中文输入，expect不咋好用，这里需要手动创建用户
@@ -33,6 +35,7 @@ sh user_nopasswd.sh
 
 #本机安装
 sh hadoop_install.sh
+source ~/.base_profile
 #其他机器安装java
 sh hadoop_install_other.sh
 
@@ -49,6 +52,9 @@ sh hadoop_chown_other.sh
 #.base_profile from root to user
 sh profile_install.sh
 sh profile_install_other.sh
+
+
+
 
 
 
