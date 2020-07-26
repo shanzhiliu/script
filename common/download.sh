@@ -20,6 +20,8 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/user_host
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/nopasswd_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/nopasswd_install_other.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/user_nopasswd.sh
+
 
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/java/java_install.sh
