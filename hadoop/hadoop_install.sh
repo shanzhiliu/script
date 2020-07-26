@@ -4,7 +4,7 @@ wget wget https://archive.apache.org/dist/hadoop/core/hadoop-2.7.3/hadoop-2.7.3.
 cudir=`pwd`
 
 #参数1 java 要安装的路径
-hadoop_install_path=/opt/soft/hadoop/hadoop-2.7.3
+hadoop_install_path=/opt/soft/hadoop-2.7.3
 #参数2 java 压缩包的位置
 hadoop_jar_path="$cudir/hadoop-2.7.3.tar.gz"
 

@@ -47,19 +47,14 @@ sh hadoop_config.sh
 #其他机器配置hadoop
 sh hadoop_config_other.sh
 
-
+#本机hadoop 修改所属用户
+sh hadoop_chown.sh
+#其他机器hadoop 修改所属用户
+sh hadoop_chown_other.sh
 
 #.base_profile from root to user
 sh profile_install.sh
-
 sh profile_install_other.sh
-
-
-#本机hadoop 修改所属用户
-sh hadoop_chown.sh
-
-#其他机器hadoop 修改所属用户
-sh hadoop_chown_other.sh
 
 
 
