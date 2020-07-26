@@ -42,6 +42,13 @@ sh hadoop_install.sh
 #其他机器安装java
 sh hadoop_install_other.sh
 
+#本机配置hadoop
+sh hadoop_config.sh
+#其他机器配置hadoop
+sh hadoop_config_other.sh
+
+
+
 #.base_profile from root to user
 sh profile_install.sh
 

@@ -28,8 +28,18 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/java/java_instal
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_install_other.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_config.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_config_other.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_chown.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_chown_other.sh
 
-chmod 777 *
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/hadoop-env.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/yarn-env.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/core-site.xml
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/hdfs-site.xml
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/mapred-site.xml
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/yarn-site.xml
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/slaves
+
+chmod 777 *.sh
 
