@@ -63,7 +63,4 @@ echo "export PATH=\$PATH:\$HADOOP_HOME/bin:\$PATH:\$HADOOP_HOME/sbin"  >> ~/.bas
 
 source ~/.bash_profile
 
-
-
 echo "hadoop 安装配置完成"
-echo `hadoop version`
