@@ -1,6 +1,6 @@
 
 
-wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/download.sh && chmod 777 download.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/download.sh && chmod 777 download.sh && ./download.sh
 
 chmod 777 *
 
@@ -8,3 +8,7 @@ chmod 777 *
 
 useradd test
 passwd test
+
+配置host.ini
+
+配置user_host.ini
