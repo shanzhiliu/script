@@ -27,12 +27,13 @@ sh java_install_other.sh
 
 
 #创建用户名密码,因为需要识别中文输入，expect不咋好用，这里需要手动创建用户
-
+cuuser=shanshan3
 #拷贝host.ini到当前用户目录下
 sh user_install.sh
 #本机shanshan3用户配置免密登录
+su - $cuuser << EOF
 sh user_install_other.sh
-
+EOF
 #其他机器shanshan3用户配置免密登录
 
 
@@ -40,6 +41,11 @@ sh user_install_other.sh
 sh hadoop_install.sh
 #其他机器安装java
 sh hadoop_install_other.sh
+
+#.base_profile from root to user
+sh profile_install.sh
+
+sh profile_install_other.sh
 
 
 
