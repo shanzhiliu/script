@@ -26,7 +26,10 @@ sh java_install_other.sh
 
 source ~/.base_profile
 
-
+#本机shanshan3用户
+sh user_config.sh
+#其他机器shanshan3用户
+sh user_config_other.sh
 #执行其他用的免密登录
 sh user_nopasswd.sh
 
@@ -46,6 +49,9 @@ sh hadoop_config_other.sh
 sh hadoop_chown.sh
 #其他机器hadoop 修改所属用户
 sh hadoop_chown_other.sh
+
+#格式化hadoop
+sh hadoop_format.sh
 
 #.base_profile from root to user
 sh profile_install.sh

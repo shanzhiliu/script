@@ -22,6 +22,9 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/user_host
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/nopasswd_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/nopasswd_install_other.sh
 
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/user_config.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/user_config_other.sh
+
 
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/java/java_install.sh
@@ -34,6 +37,7 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_co
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_config_other.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_chown.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_chown_other.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_format.sh
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/hadoop-env.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/yarn-env.sh
