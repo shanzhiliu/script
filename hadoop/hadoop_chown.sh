@@ -1,5 +1,5 @@
 
-source ~/.base_profile
+source ~/.bash_profile
 cuuser=shanshan3
 
 chown -R $cuuser:$cuuser  $HADOOP_HOME

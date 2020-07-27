@@ -1,4 +1,4 @@
-source ~/.base_profile
+source ~/.bash_profile
 cupath=$HADOOP_HOME/etc/hadoop/
 
 \cp hadoop-env.sh  $cupath

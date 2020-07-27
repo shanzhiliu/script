@@ -24,7 +24,7 @@ sh java_install.sh
 #其他机器安装java
 sh java_install_other.sh
 
-source ~/.base_profile
+source ~/.bash_profile
 
 #本机shanshan3用户
 sh user_config.sh
@@ -38,7 +38,7 @@ sh hadoop_config_slaves.sh
 #本机安装
 sh hadoop_install.sh
 #使生效
-source ~/.base_profile
+source ~/.bash_profile
 #其他机器安装java
 sh hadoop_install_other.sh
 
