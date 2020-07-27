@@ -19,11 +19,14 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/user_nopa
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/host.ini
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/user_host.ini
 
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/user_config.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/user_config_other.sh
+
+
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/nopasswd_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/nopasswd_install_other.sh
 
-wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/user_config.sh
-wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/user_config_other.sh
+
 
 
 
