@@ -5,7 +5,7 @@ cuuser=shanshan3
 basepath=/opt/soft/
 zkname=zookeeper-3.4.2
 zkpath="$basepath$zkname"
-zkmyidpath="$zkpath/mydata/"
+zkmyidpath="$zkpath/mydata"
 
 myidcontext=1
 
@@ -24,7 +24,7 @@ tar -xzvf zookeeper-3.4.2.tar.gz -C $basepath
 #创建myid存放路径
 mkdir -p $zkmyidpath
 
-echo $myidcontext >> myid
+echo $myidcontext >> "$zkmyidpath/myid"
 #拷贝配置文件
 cp zoo.cfg "$zkpath/conf"
 
