@@ -32,4 +32,6 @@ function ConfigHosts(){
     echo -e "配置hosts--完成\t"
 }
 
+#先清空hosts
+echo "" > /etc/hosts
 ConfigHosts
