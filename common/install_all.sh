@@ -52,18 +52,21 @@ sh hadoop_chown.sh
 #其他机器hadoop 修改所属用户
 sh hadoop_chown_other.sh
 
-#格式化hadoop
-sh hadoop_format.sh
 
 #.base_profile from root to user
 sh profile_install.sh
 sh profile_install_other.sh
+
+#格式化hadoop
+sh hadoop_format.sh
 
 
 #本机安装zookeeper
 sh zookeeper_install.sh
 #其他机器安装zookeeper
 sh zookeeper_install_other.sh
+#使生效
+source ~/.bash_profile
 
 
 
