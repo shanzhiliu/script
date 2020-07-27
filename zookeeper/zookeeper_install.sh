@@ -13,7 +13,7 @@ myidcontext=1
 if [ -n "$1" ]; then
      myidcontext=$1
 else
-    
+    echo "使用默认参数"
 fi
 
 
