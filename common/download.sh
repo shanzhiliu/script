@@ -38,6 +38,7 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_co
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_chown.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_chown_other.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_format.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoop_config_slaves.sh
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/hadoop-env.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/yarn-env.sh
@@ -46,6 +47,8 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdat
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/mapred-site.xml
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/yarn-site.xml
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/slaves
+
+
 
 
 

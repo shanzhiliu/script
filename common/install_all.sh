@@ -33,6 +33,8 @@ sh user_config_other.sh
 #执行其他用的免密登录
 sh user_nopasswd.sh
 
+#hadoop_slaves文件修改
+sh hadoop_config_slaves.sh
 #本机安装
 sh hadoop_install.sh
 #使生效
@@ -56,6 +58,12 @@ sh hadoop_format.sh
 #.base_profile from root to user
 sh profile_install.sh
 sh profile_install_other.sh
+
+
+#本机安装zookeeper
+sh zookeeper_install.sh
+#其他机器安装zookeeper
+sh zookeeper_install_other.sh
 
 
 
