@@ -25,7 +25,7 @@ function ConfigRunShell(){
     for ((i=1;i<${CONFIG_LENGTH};i++));
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
-        scp zookeeper_install.sh  ${CONFIG[4]}@${CONFIG[3]}:~
+        scp zoo.cfg zookeeper_install.sh  ${CONFIG[4]}@${CONFIG[3]}:~
         ssh -T -p ${CONFIG[2]} ${CONFIG[4]}@${CONFIG[3]} << EOF 
         sh zookeeper_install.sh $[$i+1]
 EOF

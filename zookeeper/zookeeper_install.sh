@@ -1,5 +1,7 @@
 wget http://archive.apache.org/dist/zookeeper/zookeeper-3.4.2/zookeeper-3.4.2.tar.gz
 
+yum install nc -y
+
 cuuser=shanshan3
 
 basepath=/opt/soft/
@@ -27,6 +29,9 @@ mkdir -p $zkmyidpath
 echo $myidcontext >> "$zkmyidpath/myid"
 #拷贝配置文件
 cp zoo.cfg "$zkpath/conf"
+
+#修改脚本文件 去掉-q 1
+sed -i  "s/-q 1/ /g" "$zkpath/bin/zkServer.sh"
 
 chown -R $cuuser:$cuuser $zkpath
 
