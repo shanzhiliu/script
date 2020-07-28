@@ -88,6 +88,21 @@ sh profile_install_other.sh
 source ~/.bash_profile
 }
 
+#安装kafka
+function installKafka(){
+#本机安装zookeeper
+sh install_kafka.sh 0 v1 zookeeper.connect=node1:2181,node2:2181,node3:2181
+#其他机器安装zookeeper
+sh install_kafka_other.sh
+
+#.base_profile from root to user
+sh profile_install.sh
+sh profile_install_other.sh
+
+#使生效
+source ~/.bash_profile
+}
+
 
 
 
@@ -104,3 +119,5 @@ addLinuxUser
 installHadoop
 #安装zookeeper
 installZookeeper
+#安装kafka
+installKafka
