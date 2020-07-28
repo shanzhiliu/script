@@ -104,31 +104,3 @@ addLinuxUser
 installHadoop
 #安装zookeeper
 installZookeeper
-
-
-
-
-
-# function setPassword() {
-
-# /usr/bin/expect << EOF
-# set timeout 30
-# spawn passwd shanshan3
-# expect {
-#     "密码" { send "jF5GEK1VXCxTS132jF5GEKggs3441VXCxTS132\r";exp_continue }
-#     "密码" { send "jF5GEK1VXCxTS132jF5GEKggs3441VXCxTS132\r"}
-#     }
-# expect eof
-# EOF
-
-# }
-
-# cuuser=shanshan3
-# cupwd=jF5GEK1VXCxTS132jF5GEKggs3441VXCxTS132
-# #本机创建用户
-# useradd $cuuser
-# #其他机器创建用户
-# passwd $cuuser
-# setPassword $cupwd
-
-
