@@ -25,9 +25,9 @@ function ConfigRunShell(){
     for ((i=1;i<${CONFIG_LENGTH};i++));
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
-        scp install_kafka.sh  ${CONFIG[4]}@${CONFIG[3]}:~
+        scp kafka_install.sh  ${CONFIG[4]}@${CONFIG[3]}:~
         ssh -T -p ${CONFIG[2]} ${CONFIG[4]}@${CONFIG[3]} << EOF 
-        sh install_kafka.sh $i ${CONFIG[0]} zookeeper.connect=node1:2181,node2:2181,node3:2181
+        sh kafka_install.sh $i ${CONFIG[0]} zookeeper.connect=node1:2181,node2:2181,node3:2181
 EOF
     done
     
