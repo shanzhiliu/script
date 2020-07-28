@@ -18,9 +18,6 @@ else
     echo "使用默认参数"
 fi
 
-
-/opt/soft/zookeeper-3.4.2/mydata
-
 tar -xzvf zookeeper-3.4.2.tar.gz -C $basepath
 
 #创建myid存放路径
