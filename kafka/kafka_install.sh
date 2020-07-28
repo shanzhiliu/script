@@ -18,7 +18,7 @@ confpath="$kafkapath/config/server.properties"
 sed -i "s/broker.id=0/broker.id=$1/g" $confpath
 
 #指定当前broker的服务地址 （新增）/ 需要 转成 \/
-sed -i "/#advertised.listeners=PLAINTEXT:\/\/your.host.name:9092/a\host.name=$2" $confpath
+sed -i "/#advertised.listeners=PLAINTEXT:\/\/your.host.name:9092/a\advertised.listeners=PLAINTEXT:\/\/$2:9092" $confpath
 
 #kafka集群数据存放的目录
 sed -i "s#log.dirs=/tmp/kafka-logs#log.dirs=$kafkalogpath#g" $confpath
@@ -29,8 +29,8 @@ sed -i "s/zookeeper.connect=localhost:2181/$3/g" $confpath
 #zookeeper.connect=node1:2181,node2:2181,node3:2181
 
 #指定kafka中的topic是否可以删除，默认是false，表示不可以删除，改为true，可以删除
-echo "#指定kafka中的topic是否可以删除" >> $confpath
-echo "delete.topic.enable=true" >> $confpath
+echo -e "\n#指定kafka中的topic是否可以删除" >> $confpath
+echo -e "\ndelete.topic.enable=true" >> $confpath
 
 echo "#kafka config" >> ~/.bash_profile
 echo "export KAFKA_HOME=$kafkapath" >> ~/.bash_profile

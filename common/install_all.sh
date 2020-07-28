@@ -103,6 +103,19 @@ sh profile_install_other.sh
 source ~/.bash_profile
 }
 
+#安装scala
+function installScala(){
+#本机和其他机器安装zookeeper
+sh kafka_install_all.sh zookeeper.connect=node1:2181,node2:2181,node3:2181
+
+#.base_profile from root to user
+sh profile_install.sh
+sh profile_install_other.sh
+
+#使生效
+source ~/.bash_profile
+}
+
 
 
 
@@ -119,5 +132,10 @@ addLinuxUser
 installHadoop
 #安装zookeeper
 installZookeeper
+
+#安装scala
+installScala
+source ~/.bash_profile
+
 #安装kafka
 installKafka

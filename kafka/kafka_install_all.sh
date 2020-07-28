@@ -22,16 +22,23 @@ CONFIG_LENGTH=${#CONFIGS[*]}  #配置站点个数
 
 function ConfigRunShell(){
     echo -e "连接到其他服务器运行脚本--开始\t"
-    for ((i=1;i<${CONFIG_LENGTH};i++));
+    for ((i=0;i<${CONFIG_LENGTH};i++));
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
-        scp kafka_install.sh  ${CONFIG[4]}@${CONFIG[3]}:~
+        if [$i != 0]; then
+            scp kafka_install.sh  ${CONFIG[4]}@${CONFIG[3]}:~
+        else
+            echo "no copy"
+        fi
+
         ssh -T -p ${CONFIG[2]} ${CONFIG[4]}@${CONFIG[3]} << EOF 
-        sh kafka_install.sh $i ${CONFIG[0]} zookeeper.connect=node1:2181,node2:2181,node3:2181
+        sh kafka_install.sh $i ${CONFIG[3]} $1
 EOF
+
     done
     
      echo -e "连接到其他服务器运行脚本---完成\t"
 }
 
-ConfigRunShell
+ConfigRunShell $1
+

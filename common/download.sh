@@ -69,5 +69,9 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_inst
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install_other.sh
 
 
-wget --no-check-certificate --no-cache --no-cookies  https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install.sh
-wget --no-check-certificate --no-cache --no-cookies  https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install_other.sh
+# wget --no-check-certificate --no-cache --no-cookies  https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install.sh
+# wget --no-check-certificate --no-cache --no-cookies  https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install_other.sh
+
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/scala/scala_install.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/scala/scala_install_other.sh
+
