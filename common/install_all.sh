@@ -75,6 +75,8 @@ sh hadoop_format.sh
 
 #安装zookeeper
 function installZookeeper(){
+#配置zookeeper配置文件
+sh zookeeper_config.sh
 #本机安装zookeeper
 sh zookeeper_install.sh
 #其他机器安装zookeeper
