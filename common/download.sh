@@ -63,3 +63,7 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/mysql/mysql_inst
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/zookeeper_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/zookeeper_install_other.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/conf/zoo.cfg
+
+
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install_other.sh
