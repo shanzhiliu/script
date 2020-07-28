@@ -90,11 +90,8 @@ source ~/.bash_profile
 
 #安装kafka
 function installKafka(){
-#本机安装zookeeper
-sh kafka_install.sh 0 v1 zookeeper.connect=node1:2181,node2:2181,node3:2181
-#其他机器安装zookeeper
-sh kafka_install_other.sh
-
+#本机和其他机器安装
+sh kafka_install_all.sh zookeeper.connect=v1:2181,v1:2181,v1:2181
 #.base_profile from root to user
 sh profile_install.sh
 sh profile_install_other.sh
@@ -105,8 +102,11 @@ source ~/.bash_profile
 
 #安装scala
 function installScala(){
-#本机和其他机器安装zookeeper
-sh kafka_install_all.sh zookeeper.connect=node1:2181,node2:2181,node3:2181
+
+#本机安装zookeeper
+sh scala_install.sh
+#其他机器安装zookeeper
+sh scala_install_other.sh
 
 #.base_profile from root to user
 sh profile_install.sh
