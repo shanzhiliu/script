@@ -53,7 +53,11 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/mysql/mysql_inst
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/zookeeper_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/zookeeper_install_other.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/zookeeper_config.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/zookeeper_start_all.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/zookeeper_stop_all.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/conf/zoo.cfg
+
+
 
 wget --no-check-certificate --no-cache --no-cookies https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install.sh
 wget --no-check-certificate --no-cache --no-cookies https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install_all.sh
