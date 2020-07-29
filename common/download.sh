@@ -1,4 +1,3 @@
-
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/install_all.sh
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/base_install.sh
@@ -26,10 +25,6 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/user_conf
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/nopasswd_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/ssh/nopasswd_install_other.sh
 
-
-
-
-
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/java/java_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/java/java_install_other.sh
 
@@ -51,26 +46,17 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdat
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/yarn-site.xml
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hadoop/hadoopdata/slaves
 
-
-
-
-
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/hive/hive_install.sh
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/mysql/mysql_install.sh
-
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/zookeeper_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/zookeeper_install_other.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/zookeeper_config.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/conf/zoo.cfg
 
-
-
 wget --no-check-certificate --no-cache --no-cookies https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install.sh
 wget --no-check-certificate --no-cache --no-cookies https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install_all.sh
 
-
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/scala/scala_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/scala/scala_install_other.sh
-
