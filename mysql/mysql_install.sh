@@ -9,3 +9,12 @@ systemctl status mysqld
 grep 'temporary password' /var/log/mysqld.log
 
 #手动修改mysql密码
+#  ALTER USER 'root'@'localhost' IDENTIFIED BY 'shan@@aaAA1SS'; 
+##### 修改支持远程连接
+
+# mysql -uroot -p
+# use mysql;
+# select host from user where user = "root";
+# update user set host = '%' where user ='root';
+# flush privileges;
+# systemctl restart mysqld
