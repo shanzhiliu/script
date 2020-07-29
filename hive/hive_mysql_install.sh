@@ -55,7 +55,19 @@ cd $hive_install_dir_name
 mkdir ./hive && tar -xzvf  $hive_jar_file_name -C ./hive --strip-components 1
 mv hive $hive_install_file_name
 
-\cp hive-site.xml "$hive_install_path/conf/hive-site.xml"
+cp hive-site.xml  "$hive_install_path/conf/"
+
+#替换数据库ip
+sed -i  "s/149.28.28.165/$1/g" "$hive_install_path/conf/hive-site.xml"
+#替换hive默认数据库用户名
+sed -i  "s#<value>root</value>#<value>$2</value>#g" "$hive_install_path/conf/hive-site.xml"
+#替换hive默认数据库密码
+sed -i  "s#<value>mysqlpasswd</value>#<value>$3</value>#g" "$hive_install_path/conf/hive-site.xml"
+
+#下载mysql驱动
+wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar
+#拷贝驱动给hive
+cp mysql-connector-java-5.1.46.jar  "$hive_install_path/lib/"
 
 chown -R $cuuser:$cuuser $hive_install_path
 chmod -R 755 $hive_install_path	

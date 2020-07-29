@@ -30,7 +30,7 @@
    <!--password，默认mine；-->
 <property>
   <name>javax.jdo.option.ConnectionPassword</name>
-  <value>ugrd1.>AcokA</value>
+  <value>mysqlpasswd</value>
 </property>
 
 </configuration>
