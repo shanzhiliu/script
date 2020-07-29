@@ -58,9 +58,13 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/zookee
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/zookeeper/conf/zoo.cfg
 
 
+#--no-check-certificate --no-cache --no-cookies
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install_all.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_start_all.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_stop_all.sh
 
-wget --no-check-certificate --no-cache --no-cookies https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install.sh
-wget --no-check-certificate --no-cache --no-cookies https://raw.githubusercontent.com/shanzhiliu/script/master/kafka/kafka_install_all.sh
+
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/scala/scala_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/master/scala/scala_install_other.sh

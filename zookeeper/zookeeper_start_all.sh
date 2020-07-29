@@ -24,7 +24,6 @@ function ConfigRunShell(){
     for ((i=0;i<${CONFIG_LENGTH};i++));
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
-        zkServer.sh start
         ssh -T -p ${CONFIG[2]} ${CONFIG[4]}@${CONFIG[3]} << EOF 
         zkServer.sh start
 EOF

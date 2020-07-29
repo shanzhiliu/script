@@ -25,7 +25,7 @@ function ConfigRunShell(){
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
         ssh -T -p ${CONFIG[2]} ${CONFIG[4]}@${CONFIG[3]} << EOF 
-        zkServer.sh stop
+        nohup kafka-server-stop.sh > /dev/null 2>&1 &
 EOF
     done
     
