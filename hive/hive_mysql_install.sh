@@ -9,30 +9,20 @@ hive_install_path=/opt/soft/hive-1.2.2
 #参数2 java 压缩包的位置
 hive_jar_path="$cudir/apache-hive-1.2.2-bin.tar.gz"
 
-hive_install_dir_name=/opt/soft/test
-hive_install_file_name=jdk1.8
+hive_install_dir_name=""
+hive_install_file_name=""
 
-hive_jar_dir_name=/opt/soft/test
-hive_jar_file_name=jdk1.8.tar
+hive_jar_dir_name=""
+hive_jar_file_name=""
 
 
-if [ -n "$1" ]; then
-    hive_install_path=$1
-    #获取文件名
-    hive_install_dir_name=${hive_install_path%/*}
-    echo $hive_install_dir_name
-    #获取所在路径
-    hive_install_file_name=${hive_install_path##*/}
-    echo $hive_install_file_name
-else
-    echo "使用配置文件的默认路径安装"
-      #获取文件名
-    hive_install_dir_name=${hive_install_path%/*}
-    echo $hive_install_dir_name
-    #获取所在路径
-    hive_install_file_name=${hive_install_path##*/}
-    echo $hive_install_file_name
-fi
+echo "使用配置文件的默认路径安装"
+#获取文件名
+hive_install_dir_name=${hive_install_path%/*}
+echo $hive_install_dir_name
+#获取所在路径
+hive_install_file_name=${hive_install_path##*/}
+echo $hive_install_file_name
 
 
 hive_jar_dir_name=${hive_jar_path%/*}
