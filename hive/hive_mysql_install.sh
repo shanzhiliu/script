@@ -55,9 +55,11 @@ cd $hive_install_dir_name
 mkdir ./hive && tar -xzvf  $hive_jar_file_name -C ./hive --strip-components 1
 mv hive $hive_install_file_name
 
+\cp hive-site.xml "$hive_install_path/conf/hive-site.xml"
 
 chown -R $cuuser:$cuuser $hive_install_path
 chmod -R 755 $hive_install_path	
+
 
 
 echo "hive 安装配置完成"
