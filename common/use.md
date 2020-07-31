@@ -1,7 +1,7 @@
 
 
 #下载脚本
-wget https://raw.githubusercontent.com/shanzhiliu/script/master/common/download.sh && chmod 777 download.sh && ./download.sh&&chmod 777 *
+wget https://raw.githubusercontent.com/shanzhiliu/script/cn/common/download.sh && chmod 777 download.sh && ./download.sh&&chmod 777 *
 
 
 #配置host.ini
