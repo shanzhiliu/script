@@ -1,5 +1,5 @@
 
-wget https://downloads.apache.org/hive/hive-1.2.2/apache-hive-1.2.2-bin.tar.gz
+#wget https://downloads.apache.org/hive/hive-1.2.2/apache-hive-1.2.2-bin.tar.gz
 
 cudir=`pwd`
 cuuser=shanshan3

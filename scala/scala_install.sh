@@ -1,5 +1,5 @@
 
-wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" https://downloads.lightbend.com/scala/2.11.8/scala-2.11.8.tgz
+#wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" https://downloads.lightbend.com/scala/2.11.8/scala-2.11.8.tgz
 
 cudir=`pwd`
 

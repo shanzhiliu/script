@@ -1,4 +1,4 @@
-wget http://archive.apache.org/dist/zookeeper/zookeeper-3.4.2/zookeeper-3.4.2.tar.gz
+#wget http://archive.apache.org/dist/zookeeper/zookeeper-3.4.2/zookeeper-3.4.2.tar.gz
 
 yum install nc -y
 
