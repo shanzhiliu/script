@@ -71,3 +71,7 @@ wget https://raw.githubusercontent.com/shanzhiliu/script/cn/kafka/kafka_stop_all
 
 wget https://raw.githubusercontent.com/shanzhiliu/script/cn/scala/scala_install.sh
 wget https://raw.githubusercontent.com/shanzhiliu/script/cn/scala/scala_install_other.sh
+
+
+wget https://raw.githubusercontent.com/shanzhiliu/script/cn/delete/dele.sh
+wget https://raw.githubusercontent.com/shanzhiliu/script/cn/delete/dele_all.sh
