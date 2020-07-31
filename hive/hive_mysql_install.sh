@@ -67,6 +67,8 @@ chmod -R 755 $hive_install_path
 
 echo "hive 安装配置完成"
 
+#使用 （mysqlip user passwd）
+# sh hive_mysql_install.sh 149.28.28.165 root shan@@aaAA1SS
 #启动
 # ./bin/hive  #启动hive （必须这个路径，执行）
 
