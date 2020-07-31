@@ -105,9 +105,9 @@ source ~/.bash_profile
 #安装scala
 function installScala(){
 
-#本机安装zookeeper
+#本机安装scala
 sh scala_install.sh
-#其他机器安装zookeeper
+#其他机器安装scala
 sh scala_install_other.sh
 
 #.base_profile from root to user
