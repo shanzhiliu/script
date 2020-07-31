@@ -22,20 +22,18 @@ CONFIG_LENGTH=${#CONFIGS[*]}  #配置站点个数
 
 function ConfigRunShell(){
     echo -e "连接到其他服务器运行脚本--开始\t"
-    for ((i=0;i<${CONFIG_LENGTH};i++));
+    for ((i=1;i<${CONFIG_LENGTH};i++));
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
-        if [ "$i" != 0 ]; then
-            scp dele.sh  ${CONFIG[4]}@${CONFIG[3]}:~
-        else
-            echo "no copy"
-        fi
-
         ssh -T -p ${CONFIG[2]} ${CONFIG[4]}@${CONFIG[3]} << EOF 
         sh dele.sh
 EOF
 
     done
+
+    sh dele.sh
+
+    
     
      echo -e "连接到其他服务器运行脚本---完成\t"
 }
