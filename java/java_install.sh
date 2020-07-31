@@ -47,7 +47,7 @@ then
  mkdir -p  $java_install_dir_name
 fi
 
-mv $java_jar_path $java_install_dir_name
+cp $java_jar_path $java_install_dir_name
 cd $java_install_dir_name
 
 

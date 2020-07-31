@@ -25,7 +25,7 @@ function ConfigRunShell(){
     for ((i=1;i<${CONFIG_LENGTH};i++));
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
-        scp java_install.sh  ${CONFIG[4]}@${CONFIG[3]}:~
+        scp java_install.sh jdk-8u131-linux-x64.tar.gz ${CONFIG[4]}@${CONFIG[3]}:~
         ssh -T -p ${CONFIG[2]} ${CONFIG[4]}@${CONFIG[3]} << EOF 
         sh java_install.sh 
 EOF

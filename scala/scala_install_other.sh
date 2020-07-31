@@ -25,7 +25,7 @@ function ConfigRunShell(){
     for ((i=1;i<${CONFIG_LENGTH};i++));
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
-        scp scala_install.sh  ${CONFIG[4]}@${CONFIG[3]}:~
+        scp scala_install.sh scala-2.11.8.tgz  ${CONFIG[4]}@${CONFIG[3]}:~
         ssh -T -p ${CONFIG[2]} ${CONFIG[4]}@${CONFIG[3]} << EOF 
         sh scala_install.sh 
 EOF

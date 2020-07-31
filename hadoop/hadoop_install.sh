@@ -47,7 +47,7 @@ then
  mkdir -p  $hadoop_install_dir_name
 fi
 
-mv $hadoop_jar_path $hadoop_install_dir_name
+cp $hadoop_jar_path $hadoop_install_dir_name
 cd $hadoop_install_dir_name
 
 

@@ -47,7 +47,7 @@ then
  mkdir -p  $scala_install_dir_name
 fi
 
-mv $scala_jar_path $scala_install_dir_name
+cp $scala_jar_path $scala_install_dir_name
 cd $scala_install_dir_name
 
 

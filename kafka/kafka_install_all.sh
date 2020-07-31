@@ -26,7 +26,7 @@ function ConfigRunShell(){
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
         if [ "$i" != 0 ]; then
-            scp kafka_install.sh  ${CONFIG[4]}@${CONFIG[3]}:~
+            scp kafka_install.sh kafka_2.11-1.1.0.tgz  ${CONFIG[4]}@${CONFIG[3]}:~
         else
             echo "no copy"
         fi
