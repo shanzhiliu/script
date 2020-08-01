@@ -9,3 +9,4 @@ cupath=$HADOOP_HOME/etc/hadoop/
 \cp yarn-site.xml  $cupath
 \cp slaves  $cupath
 
+mkdir -p "$HADOOP_HOME/journaldata"

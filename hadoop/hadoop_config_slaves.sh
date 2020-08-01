@@ -24,7 +24,7 @@ CONFIG_LENGTH=${#CONFIGS[*]}  #配置站点个数
 ##
 function ConfigHosts(){
     echo -e "配置hosts--开始\t"
-    for ((i=1;i<${CONFIG_LENGTH};i++));
+    for ((i=2;i<${CONFIG_LENGTH};i++));
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
         echo "${CONFIG[0]}" >> slaves

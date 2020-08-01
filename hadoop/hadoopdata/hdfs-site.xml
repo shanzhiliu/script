@@ -33,3 +33,64 @@
 		<value>3</value>
 	</property>
 </configuration>
+
+
+
+<configuration>
+  <property>
+    <name>dfs.nameservices</name>
+    <value>ns1</value>
+  </property>
+  <property>
+    <name>dfs.ha.namenodes.ns1</name>
+    <value>nn1,nn2</value>
+  </property>
+  <property>
+    <name>dfs.namenode.rpc-address.ns1.nn1</name>
+    <value>v1:9000</value>
+  </property>
+  <property>
+    <name>dfs.namenode.http-address.ns1.nn1</name>
+    <value>v1:50070</value>
+  </property>
+  <property>
+    <name>dfs.namenode.rpc-address.ns1.nn2</name>
+    <value>v2:9000</value>
+  </property>
+  <property>
+    <name>dfs.namenode.http-address.ns1.nn2</name>
+    <value>v2:50070</value>
+  </property>
+  <property>
+    <name>dfs.namenode.shared.edits.dir</name>
+    <value>qjournal://v3:8485;v4:8485;v5:8485/ns1</value>
+  </property>
+  <property>
+    <name>dfs.journalnode.edits.dir</name>
+    <value>/opt/soft/hadoop-2.9.1/journaldata</value>
+  </property>
+  <property>
+    <name>dfs.ha.automatic-failover.enabled</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>dfs.client.failover.proxy.provider.ns1</name>
+    <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+  </property>
+  <property>
+    <name>dfs.ha.fencing.methods</name>
+    <value>
+      sshfence
+      shell(/bin/true)
+    </value>
+  </property>
+  <property>
+    <name>dfs.ha.fencing.ssh.private-key-files</name>
+    <value>/home/shanshan3/.ssh/id_rsa</value>
+  </property>
+  <property>
+    <name>dfs.ha.fencing.ssh.connect-timeout</name>
+    <value>30000</value>
+  </property>
+</configuration>
+

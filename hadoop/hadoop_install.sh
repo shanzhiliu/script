@@ -45,13 +45,14 @@ echo $hadoop_jar_file_name
 if [ ! -d "$hadoop_install_dir_name" ];
 then
  mkdir -p  $hadoop_install_dir_name
-fi.2
+fi
 
 cp $hadoop_jar_path $hadoop_install_dir_name
 cd $hadoop_install_dir_name
 
 
-mkdir ./hadoop && tar -xzvf  $hadoop_jar_file_name -C ./hadoop --strip-components 1
+mkdir ./hadoop 
+tar -xzvf  $hadoop_jar_file_name -C ./hadoop --strip-components 1
 mv hadoop $hadoop_install_file_name
 
 
