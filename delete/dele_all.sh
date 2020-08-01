@@ -25,16 +25,14 @@ function ConfigRunShell(){
     for ((i=1;i<${CONFIG_LENGTH};i++));
     do
         CONFIG=(${CONFIGS[$i]}) #将一维sites字符串赋值到数组
+        scp dele.sh  ${CONFIG[4]}@${CONFIG[3]}:~
         ssh -T -p ${CONFIG[2]} ${CONFIG[4]}@${CONFIG[3]} << EOF 
         sh dele.sh
 EOF
 
     done
-
+    
     sh dele.sh
-
-    
-    
      echo -e "连接到其他服务器运行脚本---完成\t"
 }
 

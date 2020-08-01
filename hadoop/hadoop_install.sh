@@ -1,15 +1,15 @@
 
-#wget wget https://archive.apache.org/dist/hadoop/core/hadoop-2.7.3/hadoop-2.7.3.tar.gz
+#wget wget https://archive.apache.org/dist/hadoop/core/hadoop-2.9.1/hadoop-2.9.1.tar.gz
 
 cudir=`pwd`
 
 #参数1 java 要安装的路径
-hadoop_install_path=/opt/soft/hadoop-2.7.3
+hadoop_install_path=/opt/soft/hadoop-2.9.1
 #参数2 java 压缩包的位置
-hadoop_jar_path="$cudir/hadoop-2.7.3.tar.gz"
+hadoop_jar_path="$cudir/hadoop-2.9.1.tar.gz"
 
 hadoop_install_dir_name=/opt/soft/test
-hadoop_install_file_name=hadoop2.7.3
+hadoop_install_file_name=hadoop2.9.1
 
 hadoop_jar_dir_name=/opt/soft/test
 hadoop_jar_file_name=jdk1.8.tar
@@ -45,7 +45,7 @@ echo $hadoop_jar_file_name
 if [ ! -d "$hadoop_install_dir_name" ];
 then
  mkdir -p  $hadoop_install_dir_name
-fi
+fi.2
 
 cp $hadoop_jar_path $hadoop_install_dir_name
 cd $hadoop_install_dir_name

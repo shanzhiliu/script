@@ -26,6 +26,6 @@
  <!--hadoop集群临时数据存储目录-->
   <property>
        <name>hadoop.tmp.dir</name>
-       <value>/opt/soft/hadoop-2.7.3/tmpdata</value>
+       <value>/opt/soft/hadoop-2.9.1/tmpdata</value>
   </property>
 </configuration>
