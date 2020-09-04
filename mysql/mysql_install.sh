@@ -18,3 +18,10 @@ grep 'temporary password' /var/log/mysqld.log
 # update user set host = '%' where user ='root';
 # flush privileges;
 # systemctl restart mysqld
+
+#查询 mysql 默认大小写
+#show global variables like '%lower_case%';
+#lower_case_table_names = 1 大小写不敏感, lower_case_table_names = 0 大小写敏感
+#设置 vi vim /etc/my.cnf
+#最后一行设置  
+#lower_case_table_names = 1
