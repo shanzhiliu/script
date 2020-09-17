@@ -24,7 +24,7 @@ make install
 
 echo "#nginx config" >> ~/.bash_profile
 echo "export NGINX_HOME=/usr/local/src/nginx" >> ~/.bash_profile
-echo "export PATH=\$NGINX_HOME/sbin:$PATH"  >> ~/.bash_profile
+echo "export PATH=\$NGINX_HOME/sbin:\$PATH"  >> ~/.bash_profile
 
 
 
