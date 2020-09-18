@@ -1,3 +1,5 @@
+# wget https://raw.githubusercontent.com/shanzhiliu/script/master/mysql/mysql_install.sh
+
 wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
 yum localinstall mysql57-community-release-el7-11.noarch.rpm -y
 yum repolist enabled | grep "mysql.*-community.*"
@@ -6,7 +8,36 @@ systemctl start mysqld
 systemctl status mysqld
 
 #查看密码
-grep 'temporary password' /var/log/mysqld.log
+# grep 'temporary password' /var/log/mysqld.log
+
+#获取密码的函数
+originpasswd=`cat /var/log/mysqld.log | grep password | head -1 | rev  | cut -d ' ' -f 1 | rev`
+mysqlpasswd=$1
+
+cat > ~/.my.cnf <<EOT
+[mysql]
+user=root
+password="$originpasswd"
+EOT
+
+mysql  --connect-expired-password  -e "alter user 'root'@'localhost' identified by '$mysqlpasswd';"
+systemctl restart mysqld
+sleep 3s
+
+cat > ~/.my.cnf <<EOT
+[mysql]
+user=root
+password="$mysqlpasswd"
+EOT
+    mysql  --connect-expired-password  -e "create database wordpress_db1;"
+    mysql  --connect-expired-password  -e "use mysql; update user set host = '%' where user ='root'; flush privileges;"
+    systemctl restart mysqld
+    sleep 3s
+
+
+#忽略大小写
+echo lower_case_table_names = 1 >> /etc/my.cnf
+systemctl restart mysqld
 
 #手动修改mysql密码
 #  ALTER USER 'root'@'localhost' IDENTIFIED BY 'shan@@aaAA1SS'; 
