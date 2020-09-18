@@ -1,4 +1,5 @@
 # wget https://raw.githubusercontent.com/shanzhiliu/script/master/mysql/mysql_install.sh
+# sh mysql_install.sh passwd
 
 wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
 yum localinstall mysql57-community-release-el7-11.noarch.rpm -y
@@ -29,7 +30,7 @@ cat > ~/.my.cnf <<EOT
 user=root
 password="$mysqlpasswd"
 EOT
-    mysql  --connect-expired-password  -e "create database wordpress_db1;"
+    mysql  --connect-expired-password  -e "create database wordpress_db;"
     mysql  --connect-expired-password  -e "use mysql; update user set host = '%' where user ='root'; flush privileges;"
     systemctl restart mysqld
     sleep 3s
@@ -37,6 +38,8 @@ EOT
 
 #忽略大小写
 echo lower_case_table_names = 1 >> /etc/my.cnf
+echo sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES >> /etc/my.cnf
+echo character-set-server=utf8 >> /etc/my.cnf
 systemctl restart mysqld
 
 #手动修改mysql密码
