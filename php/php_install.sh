@@ -1,5 +1,5 @@
 
-# https://raw.githubusercontent.com/shanzhiliu/script/master/php/php_install.sh
+# wget https://raw.githubusercontent.com/shanzhiliu/script/master/php/php_install.sh
 
 yum install epel-release -y
 yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
