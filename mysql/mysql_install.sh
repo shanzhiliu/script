@@ -1,4 +1,4 @@
-# wget https://raw.githubusercontent.com/shanzhiliu/script/master/mysql/mysql_install.sh
+# wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/mysql/mysql_install.sh
 # sh mysql_install.sh passwd
 
 wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
