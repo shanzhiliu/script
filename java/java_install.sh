@@ -5,60 +5,24 @@ wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-
 
 cudir=`pwd`
 
-#参数1 java 要安装的路径
-java_install_path=/opt/soft/java/jdk1.8
-#参数2 java 压缩包的位置
-java_jar_path="$cudir/jdk-8u131-linux-x64.tar.gz"
-
-java_install_dir_name=/opt/soft/test
-java_install_file_name=jdk1.8
-
-java_jar_dir_name=/opt/soft/test
-java_jar_file_name=jdk1.8.tar
-
-
-if [ -n "$1" ]; then
-    java_install_path=$1
-    #获取文件名
-    java_install_dir_name=${java_install_path%/*}
-    echo $java_install_dir_name
-    #获取所在路径
-    java_install_file_name=${java_install_path##*/}
-    echo $java_install_file_name
-else
-    echo "使用配置文件的默认路径安装"
-      #获取文件名
-    java_install_dir_name=${java_install_path%/*}
-    echo $java_install_dir_name
-    #获取所在路径
-    java_install_file_name=${java_install_path##*/}
-    echo $java_install_file_name
-fi
-
-
-java_jar_dir_name=${java_jar_path%/*}
-echo $java_jar_dir_name
-#获取所在路径
-java_jar_file_name=${java_jar_path##*/}
-echo $java_jar_file_name
-    
-
-
-if [ ! -d "$java_install_dir_name" ];
+#java 安装路径
+java_path=/opt/soft/jdk8
+#下载下来的压缩包名称
+java_zip_name=jdk-8u131-linux-x64.tar.gz 
+# 如果不存在文件夹 就创建
+if [ ! -d "$java_path" ];
 then
- mkdir -p  $java_install_dir_name
+ mkdir -p  $java_path
 fi
 
-mv $java_jar_path $java_install_dir_name
-cd $java_install_dir_name
+#解压到指定的java路径中
+tar -xzvf  jdk-8u131-linux-x64.tar.gz -C $java_path --strip-components 1
 
+rm -rf $java_zip_name
 
-mkdir ./jdk8 && tar -xzvf  $java_jar_file_name -C ./jdk8 --strip-components 1
-mv jdk8 $java_install_file_name
-
-
+# 环境变量修改
 echo "#jdk8 config" >> ~/.bash_profile
-echo "export JAVA_HOME=$java_install_path" >> ~/.bash_profile
+echo "export JAVA_HOME=$java_path" >> ~/.bash_profile
 echo "export PATH=\$PATH:\$JAVA_HOME/bin:\$PATH:\$JAVA_HOME/sbin"  >> ~/.bash_profile
 
 
