@@ -6,12 +6,6 @@ zkpath="/opt/soft/zookeeper-3.4.9"
 zkmyidpath="$zkpath/zkdata"
 zklogpath="$zkpath/zklog"
 
-mkdir /home/data/zkdata
-mkdir /home/log/zk
-cd /home/data/zkdata
-echo 1 > myid
-
-
 myidcontext=1
 
 
