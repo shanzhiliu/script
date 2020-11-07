@@ -1,5 +1,5 @@
 
-# wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/zookeeper/zookeeper_install.sh
+# wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/zookeeper/zookeeper_install.sh wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/zookeeper/conf/zoo.cfg
 wget http://archive.apache.org/dist/zookeeper/zookeeper-3.4.9/zookeeper-3.4.9.tar.gz
 
 zkpath="/opt/soft/zookeeper-3.4.9"
@@ -15,13 +15,14 @@ else
     echo "使用默认参数"
 fi
 
-tar -xzvf zookeeper-3.4.9.tar.gz -C $basepath --strip-components 1
-
+#创建zk目录
+mkdir -p $zkpath
 #创建myid存放路径
 mkdir -p $zkmyidpath
 #创建log存放路径
 mkdir -p $zklogpath
 
+tar -xzvf zookeeper-3.4.9.tar.gz -C $zkpath --strip-components 1
 
 echo $myidcontext >> "$zkmyidpath/myid"
 #拷贝配置文件
