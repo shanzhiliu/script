@@ -1,5 +1,6 @@
 
 # wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/zookeeper/zookeeper_install.sh wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/zookeeper/conf/zoo.cfg
+
 wget http://archive.apache.org/dist/zookeeper/zookeeper-3.4.9/zookeeper-3.4.9.tar.gz
 
 zkpath="/opt/soft/zookeeper-3.4.9"
@@ -32,6 +33,5 @@ cp zoo.cfg "$zkpath/conf"
 echo "#zookeer config" >> ~/.bash_profile
 echo "export ZOOKEEPER_HOME=$zkpath" >> ~/.bash_profile
 echo "export PATH=\$PATH:\$ZOOKEEPER_HOME/bin:\$PATH:\$ZOOKEEPER_HOME/sbin"  >> ~/.bash_profile
-
 
 source ~/.bash_profile
