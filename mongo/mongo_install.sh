@@ -1,3 +1,4 @@
+# wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/mongo/mongo_install.sh
 
 # 配置文件修改
 cat > /etc/yum.repos.d/mongodb-org.repo<<EOF
