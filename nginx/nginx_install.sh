@@ -1,3 +1,5 @@
+# wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/nginx/nginx_install.sh
+
 yum install pcre vim -y
 yum install pcre pcre-devel -y
 yum install zlib-devel -y
