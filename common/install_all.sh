@@ -136,8 +136,8 @@ installHadoop
 installZookeeper
 
 #安装scala
-installScala
-source ~/.bash_profile
+#installScala
+#source ~/.bash_profile
 
 #安装kafka
 #installKafka
