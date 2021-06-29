@@ -1,5 +1,7 @@
 # wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/redis/redis_install.sh
 
+
+yum -y install gcc automake autoconf libtool make
 yum install -y gcc-c++
 yum install -y wget
 wget http://download.redis.io/releases/redis-5.0.4.tar.gz

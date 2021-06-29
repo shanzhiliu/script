@@ -1,5 +1,5 @@
 
-# wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/java/java_install.sh
+# wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/maven/maven_install.sh
 
 wget https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz
 
