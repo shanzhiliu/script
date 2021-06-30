@@ -13,6 +13,11 @@ tar -zxvf redis-5.0.4.tar.gz
 #配置文件
  cp ~/redis-5.0.4/redis.conf  /opt/soft/redis/bin/
 
+
+ sed -i  "s/daemonize no/daemonize yes/g"    "/opt/soft/redis/bin/redis.conf"
+ sed -i  "s/bind 127.0.0.1/#bind 127.0.0.1/g"    "/opt/soft/redis/bin/redis.conf"
+ sed -i  "s/protected-mode yes/protected-mode no/g"    "/opt/soft/redis/bin/redis.conf"
+
 java_path=/opt/soft/redis
 
 echo "#redis config" >> ~/.bash_profile
