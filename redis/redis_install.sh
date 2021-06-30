@@ -10,6 +10,9 @@ tar -zxvf redis-5.0.4.tar.gz
  make
  make install PREFIX=/opt/soft/redis
 
+#配置文件
+ cp ~/redis-5.0.4/redis.conf  /opt/soft/redis/bin/
+
 java_path=/opt/soft/redis
 
 echo "#redis config" >> ~/.bash_profile
