@@ -1,4 +1,4 @@
-# wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/mysql/mysql_install.sh
+# wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/mysql/mysql_uninstall.sh
 
 
 # 卸载mysql
