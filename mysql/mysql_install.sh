@@ -1,5 +1,9 @@
-# wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/mysql/mysql_install.sh
+# wget https://raw.githubusercontent.com/shanzhiliu/script/newShell/mysql/mysql_uninstall.sh
 # sh mysql_install.sh passwd
+# sh mysql_install.sh shan@@@@345aaAA1SS
+
+# 安装时候出现GPU秘钥问题，使用一下命令处理
+# rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
 
 wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
 yum localinstall mysql57-community-release-el7-11.noarch.rpm -y
@@ -59,3 +63,5 @@ systemctl restart mysqld
 #设置 vi vim /etc/my.cnf
 #最后一行设置  
 #lower_case_table_names = 1
+
+
